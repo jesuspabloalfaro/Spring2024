@@ -1,5 +1,4 @@
 # OS Introduction
----
 ## What is an Operating System?
 - Program that acts as an intermediary between a user of a computer and the computer hardware
 - Operating System Goals:
@@ -8,7 +7,6 @@
 	- Use the computer hardware in an efficient manner (resource management)
 
 # Computer System Structure
----
 - Computer system can be divided into four components:
 	- Hardware
 		- CPU. memory, disk, I/O devices

@@ -1,5 +1,4 @@
 # CPU, I/O, and Interrupts
----
 ## Computer-System Operation
 - *I/O* devices and the *CPU* can execute concurrently
 - Each device controller is in charge of a particular device type

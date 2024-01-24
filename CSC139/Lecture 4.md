@@ -70,4 +70,3 @@
 	- I/O Completion
 	- Timed interrupts
 	- System call
-- 
