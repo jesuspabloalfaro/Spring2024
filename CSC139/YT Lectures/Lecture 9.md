@@ -1,37 +1,33 @@
-# Basic Concepts and Process States
-## Process Concept
-- An operating system executes a variety of programs
-	- Batch system (multiprogramming) - *jobs*
-	- Time-shared (multitasking) systems - *processes* or *tasks*
-- Textbook uses the terms *job* and *process* almost interchangeably
-- **Process**: Program in execution; unit of work in modern time-sharing systems
-- System is a collection of OS processes and user processes
-- Program is *passive* entity stored on disk (*executable file*), process is *active* 
-	- Program becomes process when executable file gets loaded into memory
-- Execution of program started via GUI mouse click or name entry on CLI
-- One program can be serveral processes
-	- Consider multiple users executing the same program or one user executing multiple instances of the same program
-
-## Process in Memory
-- **Text Section**: Program code
-- **Data Section**: Contains global and static variables
-- **Stack**: Contains temporary data
-	- Function parameters, local variables, return values, return addresses
-- **Heap**: Contains memory dynamically allocated during runtime
-![[Pasted image 20240127182612.png]]
-
-## Process State
-- As a program executes, it changes *state*
-	- **New**: The process is being created
-	- **Running**: Instructions are being executed on CPU
-	- **Waiting**: The process is waiting for some event to occur (such as I/O completion, semaphore, message, child termination)
-	- **Ready**: The process is waiting to be assigned to a processor
-	- **Terminated**: The process has finished execution
-- Only one process can be running on any processor at any instant
-## Diagram of Process State
-![[Pasted image 20240127182752.png]]
-### Notes
-- The interrupt that puts the process from the *ready* state to the *running state* is the *I/O completion* interrupt. 
--  The interrupt that puts a process from the *running* state to the *ready* state is the *timed interrupt*. The time quantum expired, putting the process back to the *ready* state and the kernel will take over
-- If the process in a *running* state generates and exception, then the process will go to the *terminated* state
-- If a process requests I/O by making a system call, the kernel takes over sending the request to the I/O device and marking the process to the *waiting* state until the I/O device completes processing the request and notifies the system through an I/O completion interrupt
+# Design and Implementation
+## Operating System Design and Implementation
+- Design and Implementation of IS does not have a "perfect solution", but some approaches have proven successful
+- Internal structure of different Operating Systems can vary widely
+- Start the design by defining goals and specifications
+- Affected by choice of hardware and type of system
+- **User** goals and **System** goals
+	- User Goals: 
+		- Operating systems should be convenient to use, easy to learn, reliable, safe and fast
+	- System Goals:
+		- Operating system should be easy to design, implement, and maintain, as well as flexible, reliable, error-free, and efficient
+- Important principle to separate
+	- **Policy**: *What* will be done
+	- **Mechanisms**: *How* to do it
+- *Mechanisms* determine how to do something, policies device what will be done
+- The separation of policy from mechanism is a very important principle. It allows maximum flexibility if policy decisions are to be changed later. Need flexible parametrized mechanisms
+- Examples
+	- Timer construct is a mechanism for ensuring protection, but duration setting is a policy
+	- Priority scheduling is a mechanism, but which kinds of processes get higher priority is a policy
+- Specifying and designing an OS is highly creative task of *software engineering*
+## Implementation
+- Much variation
+	- Early OSes in assembly language
+	- Then system programming languages like Algol, PL/1
+	- Now C, C++
+- Actually usually a mix of languages
+	- Lowest levels in assembly
+	- Main body in C
+	- Systems programs in C, C++, scripting languages like PERL, Python
+- Linux and Windows kernels are mostly written in C
+- High-level language is easier to port to other hardware
+	- Linux is written in C and is available on Intel x86, Oracle SPARC and IBM PowerPC
+	- MS-DOS and early versions of Windows were written in Intel x86 Assembly and ran only on Intel x86 HW
