@@ -22,7 +22,12 @@ Information associated with each process (also called **task control block**)
 ![[Pasted image 20240208155336.png]]
 ### Notes
 - **KAS**: Kernel Address Space
+- Reason for saving state into PCB before anything is because the *kernel* needs the registers immediately after to perform its tasks
 - Within the 3 dots in the above CPU Switch, the OS is doing a variety of things
 	- State changes of processes
 	- User mode to Kernel Mode and vice versa to processes
+	- Updates *ready* queue with program
+	- Invokes CPU Scheduler
 	- Program counter is updated
+- When I/O completes, the I/O buffer gets copied to user process address space
+- 

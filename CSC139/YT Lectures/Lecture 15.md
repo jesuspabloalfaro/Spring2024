@@ -22,6 +22,8 @@
 - Producer launches the Consumer
 - On single CPU with a single core, there is context switching between the Producer and Consumer running *concurrently*
 	- If there is more cores, they would run *parallelly*
+- Parent and Child have *different* address spaces
+- Parent and Child run the same code (unless `exec` is called specifying a specific file path)
 
 ## Process Termination
 - Process executes last statement and then asks the operating system to delete it using **exit()** system call
