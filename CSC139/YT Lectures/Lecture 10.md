@@ -29,7 +29,7 @@
 		- Mach
 	- Modules
 	- Hybrid Systems
-## Simple Structure (Monolithic) - MS-Dos
+## Simple Structure (Monolithic) - MS-DOS
 - MS-DOS written to provide the most functionality in the least space
 	- Not divided into modules
 	- Although MS-DOS has some structure, its interfaces and levels of functionality are not well separated
