@@ -1,6 +1,6 @@
 # Shared Memory and the Bounded-Buffer Problem
 ## Interprocess Communication - Shared Memory
-- An area of memory shared among the processes that wish to communicate
+- An area of memory shared am`ong the processes that wish to communicate
 - Typically shared memory resides in the address space of the process creating the shared memory segment
 - The communication is under the control of the user processes not the operating system
 - Major issue is to provide mechanism that will allow the user processes to synchronize their actions when they access shared memory
