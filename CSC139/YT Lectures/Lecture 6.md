@@ -31,7 +31,7 @@
 	- Abstracts physical properties to logical storage unit - *file*
 	- Each medium is controlled by a device (e.g. disk drive, tape drive)
 		- Varying properties including *access speed, capacity, data-transfer rate, access method* (sequential or random)
-- File System managment
+- File System management
 	- Files usually organized into directories
 	- Access control on most systems to determine who can access what
 	- OS activities include

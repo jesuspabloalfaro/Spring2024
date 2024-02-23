@@ -1,6 +1,6 @@
 # Multiprogramming vs Time Sharing
 ## Comparisons
-- *Multiprogramming (Batch System)* needed for efficiency
+- **Multiprogramming (Batch System)** needed for efficiency
 	- Single user cannot keep *CPU* and *I/O* devices busy at all times
 	- *Multiprogramming* organized jobs (code and data) so *CPU* always has one to execute
 	- One job selected and run via *job scheduling*
