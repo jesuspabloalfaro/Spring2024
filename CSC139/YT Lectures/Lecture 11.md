@@ -9,7 +9,7 @@
 - Program is *passive* entity stored on disk (*executable file*), process is *active* 
 	- Program becomes process when executable file gets loaded into memory
 - Execution of program started via GUI mouse click or name entry on CLI
-- One program can be serveral processes
+- One program can be several processes
 	- Consider multiple users executing the same program or one user executing multiple instances of the same program
 
 ## Process in Memory

@@ -93,7 +93,7 @@ Unix - limited by the hardware functionality. The original UNIX operating system
 		- Win NT was microkernel but grew into monolithic Win XP
 ## Modules
 - Kernel provides core services, other services are provided as **loadable kernel modules** (boot time or run time)
-	- Each core component is seperate
+	- Each core component is separate
 	- Each talks to others over known interfaces
 	- Each is loadable as needed within the kernel
 - Overall, similar to layered but more flexible, because any module can call any other module (no hierarchy)
