@@ -25,7 +25,7 @@
 ## Thread Scheduling
 ![[Pasted image 20240326203218.png]]
 
-## Pthread Scheduling AP
+## Pthread Scheduling API
 ![[Pasted image 20240326203317.png]]
 ![[Pasted image 20240326203332.png]]
 - **attr** can be used to set the scope of your process/thread
